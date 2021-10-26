@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather Direct</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <h1 id="logo">WeatherDirect</h1>
+            </div>
+        </header>
+        <main>
+            <div class="main-container">
+                <div id="banner">
+                    <section class="weather-section">
+                        <div id="current-weather">
+                            <div id="weather-card">
+                                <h1 id="card-title">Current Weather</h1>
+
+                                <h2 id="location-name">Location: N/A</h2>
+                                <!-- <form action="" id="current-form"> -->
+                                <div id="weather-data">
+                                    <div class="tempurature">
+                                        <h3 id="temperature-title">Temperature</h3>
+                                        <br>
+                                        <div class="data" id="temperature-data">N/A</div>
+                                    </div>
+                                    <div class="coverage">
+                                        <h3 id="coverage-title">Coverage</h3>
+                                        <br>
+                                        <div class="data" id="coverage-data">N/A</div>
+                                    </div>
+                                    <div class="sunset">
+                                        <h3 id="sunset-title">Sunset</h3>
+                                        <br>
+                                        <div class="data" id="sunset-data">N/A</div>
+                                    </div>
+                                </div>
+                                <div id="current-form">
+                                    <!-- ! stop user from adjusting text area -->
+                                    <textarea name="" id="current-weather-location" placeholder="Location (city)"
+                                        cols="18" rows="0"></textarea>
+
+                                    <input type="submit" value="submit" id="current-submit">
+                                </div>
+                                <!-- </form> -->
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
